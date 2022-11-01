@@ -27,7 +27,7 @@ while (true) {
 
     if (count($userLocations) !== 2) {
         display_board($board);
-        echo "\nInvalid input. Enter your choice as numbers, seperated by a space, e.g. >> 0 1\n";
+        echo "\nInvalid input. Enter your choice as two numbers, seperated by a space, e.g. >> 0 1\n";
         continue;
     }
 
