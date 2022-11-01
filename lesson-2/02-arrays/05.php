@@ -22,7 +22,7 @@ $player = 'X';
 
 //Ongoing game
 while (true) {
-    $userChoice = readline("\n '{$player}', choose your location (row, column)>> ");
+    $userChoice = readline("\n '{$player}', choose your location (row, column) (include space between both numbers!)>> ");
     $userLocations = explode(' ', $userChoice);
 
     if (count($userLocations) !== 2) {
