@@ -2,7 +2,9 @@
 
 function cozaLozaWoza($numberOfElements, $elementsPerLine) {
     for ($i = 1; $i <= $numberOfElements; $i++) {
-        if ($i % 35 == 0) {
+        if ($i % 105 == 0) {
+           echo "CozaLozaWoza" . ' ';
+        } elseif ($i % 35 == 0) {
             echo "LozaWoza" . ' ';
         } elseif ($i % 21 == 0) {
             echo "CozaWoza" . ' ';

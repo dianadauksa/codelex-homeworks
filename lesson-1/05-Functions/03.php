@@ -10,15 +10,16 @@ $child = new stdClass();
     $child->surname = "Green";
     $child->age = 2;
 
-function isAdult($person) {
+function isAdult($person): string
+{
     if($person->age >= 18) {
-        echo "$person->name is an adult.";
+        return "$person->name is an adult.";
     } else {
-        echo "$person->name is not yet an adult.";
+        return "$person->name is not yet an adult.";
     }
 }
 
-isAdult($mom);
+echo isAdult($mom);
 echo PHP_EOL;
-isAdult($child);
+echo isAdult($child);
 echo PHP_EOL;

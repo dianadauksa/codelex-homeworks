@@ -5,11 +5,11 @@ $fallTime = 10;
 $acceleration = 9.81;
 $initialVelocity = 0;
 
-function distance($time) {
+function distance(int $time): float
+{
     global $acceleration;
-    $distance = 0.5*$acceleration*($time**2);
-    echo $distance . PHP_EOL;
+    return 0.5*$acceleration*($time**2);
 }
 
-distance($fallTime); //490.5
-distance(20); //1962
+echo distance($fallTime) . PHP_EOL; //490.5
+echo distance(20) . PHP_EOL; //1962

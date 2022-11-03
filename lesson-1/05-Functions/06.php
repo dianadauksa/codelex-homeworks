@@ -2,7 +2,7 @@
 
 $elements = [2, 5, 7, 11.7, 'codelex'];
 
-function makeDouble($number) {
+function makeDouble(int $number): int {
     return $number*2;
 }
 

@@ -1,6 +1,6 @@
 <?php
 
-function multiply($baseNumber, $multiplier) {
+function multiply(int $baseNumber, int $multiplier): int {
     return $baseNumber*$multiplier;
 }
 echo multiply(5, 2);

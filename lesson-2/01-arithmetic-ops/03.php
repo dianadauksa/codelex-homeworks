@@ -3,13 +3,13 @@
 $min = 1;
 $max = 100;
 
-function sumAndAverage($min, $max) {
+function sumAndAverage($min, $max): string
+{
     $sum = array_sum(range($min, $max));
     $average = $sum/count(range($min, $max));
-    echo "The sum of $min to $max is $sum\n";
-    echo "The average is $average\n";
+    return "The sum of $min to $max is $sum\n" . "The average is $average\n";
 }
 
-sumAndAverage(1, 100);
+echo sumAndAverage(1, 100);
 
 
