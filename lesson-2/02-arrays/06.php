@@ -1,7 +1,7 @@
 <?php
 
-$gameStatus = 'again';
-function game() {
+$gameStatus = 'on';
+while ($gameStatus = 'on') {
     $words = ['codelex', 'programming', 'typescript', 'javascript', 'bootcamp', 'acceleration', 'gravity'];
     $word = $words[array_rand($words)];
     $letters = str_split($word);
@@ -38,9 +38,12 @@ function game() {
 
     if ($word != implode('', $targetWord)) {
         echo 'Wrong! The word was: ' . $word . PHP_EOL;
-        echo "Play 'again' or 'quit'? ";
-        return readline();
+    }
+
+    echo "Play 'again' or 'quit'? ";
+    $choice = readline();
+    if($choice != 'again') {
+        break;
     }
 }
-while ($gameStatus === "again") $gameStatus = game();
 echo "Bye, thanks for playing!".PHP_EOL;
