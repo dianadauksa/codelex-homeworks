@@ -5,7 +5,7 @@ $letters = str_split($text);
 
 $keypad = '';
 
-forEach ($letters as $letter) {
+foreach ($letters as $letter) {
     switch ($letter) {
         case 'A':
             $keypad .= '2 ';
