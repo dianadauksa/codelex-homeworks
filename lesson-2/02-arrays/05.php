@@ -17,7 +17,6 @@ function displayBoard($board)
 echo "Let the games begin!\n";
 displayBoard($board);
 
-$totalTurns = 0;
 $player = 'X';
 
 //Ongoing game
