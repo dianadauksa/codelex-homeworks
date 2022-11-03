@@ -77,7 +77,7 @@ while (true) {
     // Game is a tie, exit the game
     $isATie = false;
     $checkedRows = 0;
-    forEach ($board as $row) {
+    foreach ($board as $row) {
         if (!in_array(' ', $row)) {
             $checkedRows++;
         }
