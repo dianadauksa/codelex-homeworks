@@ -6,7 +6,7 @@ $board = [
     [' ',' ',' '],
 ];
 
-function display_board($board)
+function displayBoard($board)
 {
     echo " {$board[0][0]} | {$board[0][1]} | {$board[0][2]} \n";
     echo "---+---+---\n";
@@ -15,7 +15,7 @@ function display_board($board)
     echo " {$board[2][0]} | {$board[2][1]} | {$board[2][2]} \n";
 }
 echo "Let the games begin!\n";
-display_board($board);
+displayBoard($board);
 
 $totalTurns = 0;
 $player = 'X';
@@ -26,7 +26,7 @@ while (true) {
     $userLocations = explode(' ', $userChoice);
 
     if (count($userLocations) !== 2) {
-        display_board($board);
+        displayBoard($board);
         echo "\nInvalid input. Enter your choice as two numbers, seperated by a space, e.g. >> 0 1\n";
         continue;
     }
@@ -34,12 +34,12 @@ while (true) {
     if ($board[$userLocations[0]][$userLocations[1]] == ' ') {
         $board[$userLocations[0]][$userLocations[1]] = $player;
     } else {
-        display_board($board);
+        displayBoard($board);
         echo "\nCell is already filled. Choose another cell!\n";
         continue;
     }
     echo PHP_EOL;
-    display_board($board);
+    displayBoard($board);
 
     // Winning cases, exit the game
     if ($board[0][0] !== ' ' && $board[0][0] == $board[0][1] && $board[0][1] == $board[0][2]) {

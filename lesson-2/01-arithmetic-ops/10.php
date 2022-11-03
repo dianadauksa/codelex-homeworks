@@ -16,17 +16,17 @@ class Geometry {
 
         switch($response) {
             case 1:
-                $radius = readline("Enter the radius of the Circle >> ");
+                $radius = intval(readline("Enter the radius of the Circle >> "));
                 echo "The area of your Circle is: " . self::getAreaCircle($radius) . PHP_EOL;
                 break;
             case 2:
-                $length = readline("Enter the length of the Rectangle >> ");
-                $width = readline("Enter the width of the Rectangle >> ");
+                $length = intval(readline("Enter the length of the Rectangle >> "));
+                $width = intval(readline("Enter the width of the Rectangle >> "));
                 echo "The area of your Rectangle is: " . self::getAreaRectangle($length, $width) . PHP_EOL;
                 break;
             case 3:
-                $baseLength = readline("Enter the base length of the Triangle >> ");
-                $height = readline("Enter the height of the Triangle >> ");
+                $baseLength = intval(readline("Enter the base length of the Triangle >> "));
+                $height = intval(readline("Enter the height of the Triangle >> "));
                 echo "The area of your Triangle is: " . self::getAreaTriangle($baseLength, $height) . PHP_EOL;
                 break;
             case 4:

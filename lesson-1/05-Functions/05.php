@@ -17,13 +17,13 @@ function isHeavy($fruit): bool {
      return $fruit['weight'] > 10;
 }
 
-$ship_costs = [
+$shipCosts = [
     ['weight' => 'under 10', 'cost' => 1],
     ['weight' => 'over 10', 'cost' => 2]
 ];
 
 foreach($fruits as $fruit) {
-    echo $fruit['name']. ': ' . $fruit['weight'] . 'kg, shipping costs: ' . (isHeavy($fruit) ? $ship_costs[1]['cost'] : $ship_costs[0]['cost']) . ' EUR' . PHP_EOL;
+    echo $fruit['name']. ': ' . $fruit['weight'] . 'kg, shipping costs: ' . (isHeavy($fruit) ? $shipCosts[1]['cost'] : $shipCosts[0]['cost']) . ' EUR' . PHP_EOL;
 }
 
 
