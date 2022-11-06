@@ -11,15 +11,15 @@ class Product {
         $this-> amount = $amount;
     }
 
-    public function printProduct() {
+    public function printProduct(): string {
         return $this->name . ", price $this->startPrice" . ", amount $this->amount" . PHP_EOL;
     }
 
-    public function changePrice(float $newPrice) {
+    public function changePrice(float $newPrice): float {
         return $this->startPrice = $newPrice;
     }
 
-    public function changeAmount(float $newAmount) {
+    public function changeAmount(int $newAmount): int {
         return $this->amount = $newAmount;
     }
 }
