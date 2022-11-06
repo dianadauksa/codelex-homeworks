@@ -52,13 +52,11 @@ class Odometer {
     }
 
     public function burnFuel($FuelGauge) {
-        if($this -> currentMileage - $this->initialMileage % $this->kilometersPerLiter == 0) {
+        if(($this -> currentMileage - $this->initialMileage) % $this->kilometersPerLiter == 0) {
             $FuelGauge->decrementFuelTank();
         }
     }
 }
-/* Simulate filling the car up with fuel, and then run a loop that increments the odometer until the car runs out of fuel.
-During each loop iteration, print the car’s current mileage and amount of fuel.*/
 
 $fuelGauge = new FuelGauge(50);
 $odometer = new Odometer(10, 10);
@@ -66,11 +64,11 @@ $odometer = new Odometer(10, 10);
 $fuelGauge->incrementFuelTank(10);
 echo $fuelGauge->getCurrentAmountOfFuel(); // 60 liters
 
-/* not working yet
+
 while ($fuelGauge->getCurrentAmountOfFuel() > 0) {
     $odometer->incrementMileage();
     $odometer->burnFuel($fuelGauge);
     echo $odometer->getCurrentMileage();
     echo $fuelGauge->getCurrentAmountOfFuel();
 }
-*/
+
