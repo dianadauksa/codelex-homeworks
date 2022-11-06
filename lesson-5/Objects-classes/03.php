@@ -64,7 +64,6 @@ $odometer = new Odometer(10, 10);
 $fuelGauge->incrementFuelTank(10);
 echo $fuelGauge->getCurrentAmountOfFuel(); // 60 liters
 
-
 while ($fuelGauge->getCurrentAmountOfFuel() > 0) {
     $odometer->incrementMileage();
     $odometer->burnFuel($fuelGauge);
