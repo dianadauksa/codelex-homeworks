@@ -1,7 +1,7 @@
 <?php
 
 class FuelGauge {
-    public int $currentAmountOfFuel;
+    private int $currentAmountOfFuel;
     private int $maxAmountOfFuel = 70;
     function __construct( int $currentAmountOfFuel)
     {
@@ -28,7 +28,7 @@ class FuelGauge {
 }
 
 class Odometer {
-    public int $currentMileage;
+    private int $currentMileage;
     private int $initialMileage;
     private int $maxMileage = 999999;
     public int $kilometersPerLiter = 10;
