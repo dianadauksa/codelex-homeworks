@@ -12,7 +12,7 @@ class FuelGauge {
         return $this -> currentAmountOfFuel . ' liters' . PHP_EOL;
     }
 
-    public function incrementFuelTank($liters) {
+    public function incrementFuelTank(int $liters = 1): void {
         if ($this->currentAmountOfFuel < $this -> maxAmountOfFuel) {
             $this->currentAmountOfFuel += $liters;
         }
@@ -32,7 +32,7 @@ class Odometer {
     private int $initialMileage;
     private int $maxMileage = 999999;
     private int $kilometersPerLiter = 10;
-    function __construct(int $currentMileage, int $initialMileage)
+    function __construct(int $currentMileage = 0, int $initialMileage = 0)
     {
         $this-> currentMileage = $currentMileage;
         $this-> initialMileage = $initialMileage;
@@ -42,7 +42,7 @@ class Odometer {
         return $this -> currentMileage . ' kilometers' . PHP_EOL;
     }
 
-    public function incrementMileage() {
+    public function incrementMileage(): void {
         if ($this->currentMileage < $this->maxMileage) {
             $this->currentMileage++;
         }
@@ -51,7 +51,7 @@ class Odometer {
         }
     }
 
-    public function burnFuel($FuelGauge) {
+    public function burnFuel(object $FuelGauge): void {
         if(($this -> currentMileage - $this->initialMileage) % $this->kilometersPerLiter == 0) {
             $FuelGauge->decrementFuelTank();
         }
