@@ -10,7 +10,7 @@ class Point {
     }
 
     public function swapPoints (object $a, object $b) {
-        $a->x ^= $b->x; // bitwise operator, bitwise XOP operator - returns bit-by-bit XOR of input values;
+        $a->x ^= $b->x; 
         $b->x ^= $a->x;
         $a->x ^= $b->x;
 
