@@ -31,7 +31,7 @@ class Odometer {
     private int $currentMileage;
     private int $initialMileage;
     private int $maxMileage = 999999;
-    public int $kilometersPerLiter = 10;
+    private int $kilometersPerLiter = 10;
     function __construct(int $currentMileage, int $initialMileage)
     {
         $this-> currentMileage = $currentMileage;
