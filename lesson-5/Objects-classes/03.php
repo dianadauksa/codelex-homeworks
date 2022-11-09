@@ -3,7 +3,7 @@
 class FuelGauge {
     private int $currentAmountOfFuel;
     private int $maxAmountOfFuel = 70;
-    function __construct( int $currentAmountOfFuel)
+    public function __construct( int $currentAmountOfFuel)
     {
         $this-> currentAmountOfFuel = $currentAmountOfFuel;
     }

@@ -4,7 +4,7 @@ class BankAccount {
     private string $accountName;
     private float $balance = 0;
 
-    function __construct(string $name, float $balance) {
+    public function __construct(string $name, float $balance) {
         $this->accountName = $name;
         $this->balance = $balance;
     }

@@ -4,7 +4,7 @@ class Movie {
     private string $studio;
     private string $rating;
 
-    function __construct(string $title, string $studio, string $rating) {
+    public function __construct(string $title, string $studio, string $rating) {
         $this->title = $title;
         $this->studio = $studio;
         $this->rating = $rating;

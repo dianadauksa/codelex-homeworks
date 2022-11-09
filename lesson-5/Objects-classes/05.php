@@ -6,7 +6,7 @@ class Date {
     private int $year;
     private const DAYS_IN_MONTH = [31,28,31,30,31,30,31,31,30,31,30,31];
 
-    function __construct(int $day,int $month,int $year){
+    public function __construct(int $day,int $month,int $year){
         if($year > 0){
             $this->year = $year;
         } else throw new Error('Invalid year, try again!'. PHP_EOL);

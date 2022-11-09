@@ -4,7 +4,7 @@ class Product {
     private string $name;
     private float $startPrice;
     private int $amount;
-    function __construct(string $name, float $startPrice, int $amount)
+    public function __construct(string $name, float $startPrice, int $amount)
     {
         $this-> name = $name;
         $this-> startPrice = $startPrice;

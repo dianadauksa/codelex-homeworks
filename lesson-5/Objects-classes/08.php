@@ -4,7 +4,7 @@ class SavingsAccount{
     private float $amount;
     private float $annualRate;
 
-    function __construct(float $amount, float $annualRate) {
+    public function __construct(float $amount, float $annualRate) {
         $this->amount = $amount;
         $this->annualRate = $annualRate;
     }
