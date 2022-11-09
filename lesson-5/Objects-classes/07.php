@@ -3,8 +3,8 @@
 class Dog{
     private string $name ;
     private string $gender;
-    public Dog $mother;
-    public Dog $father;
+    public ?Dog $mother;
+    public ?Dog $father;
     function __construct(string $name,string $gender) {
         $this->name = $name;
         $this->gender = $gender;
