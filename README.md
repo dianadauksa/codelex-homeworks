@@ -8,4 +8,4 @@
 
  - Homework for 03.11.2022. => lesson-3 (Flow of control)
  
- - Homework for 07.11.2022. => lesson-5 (Loops and Objects/Classes(1-3))
+ - Homework for 07.11.2022. => lesson-5 (Loops and Objects/Classes(1-9))
