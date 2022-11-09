@@ -4,7 +4,7 @@ class Date {
     private int $day;
     private int $month;
     private int $year;
-    private const DAYS_IN_MONTH = array(31,28,31,30,31,30,31,31,30,31,30,31);
+    private const DAYS_IN_MONTH = [31,28,31,30,31,30,31,31,30,31,30,31];
 
     function __construct(int $day,int $month,int $year){
         if($year > 0){
