@@ -151,7 +151,7 @@ class Application
     }
 }
 
-class VideoStore // this would repeat the functions/methods from application
+class VideoStore // this would repeat the functions/methods from application class. Everything is already included there
 {
 }
 
