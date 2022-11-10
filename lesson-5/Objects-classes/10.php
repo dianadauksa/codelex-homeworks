@@ -44,7 +44,7 @@ class Video
 
 class Application
 {
-    public array $inventory;
+    private array $inventory;
 
     function run()
     {
